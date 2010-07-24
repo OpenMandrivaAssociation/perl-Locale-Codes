@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Standard language codes (such as ISO 639)
 License:    GPL+ or Artistic
@@ -17,6 +17,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
 BuildRequires: perl(constant)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -34,7 +35,6 @@ release sooner, just email me and I'll get one out.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -52,5 +52,3 @@ rm -rf %buildroot
 %doc README LICENSE META.yml ChangeLog
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-

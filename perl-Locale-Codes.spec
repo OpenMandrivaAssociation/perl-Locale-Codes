@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Standard language codes (such as ISO 639)
 License:    GPL+ or Artistic
@@ -22,13 +22,9 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-*Locale::Codes* is a distribution containing a set of modules. The modules
+Locale::Codes is a distribution containing a set of modules. The modules
 each deal with different types of codes which identify parts of the locale
 including languages, countries, currency, etc.
-
-I plan on releasing a new version a couple of times a year to incorporate
-any changes made in the standards. If one changes, and you want a new
-release sooner, just email me and I'll get one out.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}

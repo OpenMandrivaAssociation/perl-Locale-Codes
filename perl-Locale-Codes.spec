@@ -1,9 +1,9 @@
 %define upstream_name    Locale-Codes
-%define upstream_version 3.15
+%define upstream_version 3.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Standard language codes (such as ISO 639)
 License:    GPL+ or Artistic

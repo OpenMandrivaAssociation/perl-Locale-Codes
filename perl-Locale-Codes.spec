@@ -1,5 +1,5 @@
 %define upstream_name    Locale-Codes
-%define upstream_version 3.27
+%define upstream_version 3.29
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -100,5 +100,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Feb 11 2010 cpan2dist 3.00-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 

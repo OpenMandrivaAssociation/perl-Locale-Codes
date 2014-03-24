@@ -1,5 +1,5 @@
 %define upstream_name    Locale-Codes
-%define upstream_version 3.29
+%define upstream_version 3.30
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -8,7 +8,7 @@ Summary:	Standard language codes (such as ISO 639)
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Locale/Locale-Codes-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Locale/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -100,6 +100,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Feb 11 2010 cpan2dist 3.00-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
 

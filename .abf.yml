@@ -3,5 +3,6 @@ removed_sources:
   Locale-Codes-3.25.tar.gz: 060bda7faf976b673e6088b4eccca073c745bba9
   Locale-Codes-3.27.tar.gz: b3efd1baa7b7b6db8604404a2ee1da04a3ea5508
   Locale-Codes-3.29.tar.gz: 8bda89e6616018a9077ec20163089f3deec2a7f6
-sources:
   Locale-Codes-3.30.tar.gz: ab6b9930f85a2580becee628403c3974ec3ac990
+sources:
+  Locale-Codes-3.31.tar.gz: 6223fa34f25424c7776e5efd38b7a60f40ed7fca

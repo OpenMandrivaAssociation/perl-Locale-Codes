@@ -1,15 +1,14 @@
 %define upstream_name    Locale-Codes
-%define upstream_version 3.90
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	3.90
+Release:	2
 
 Summary:	Standard language codes (such as ISO 639)
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/SBECK-github/Locale-Codes
-Source0:	https://cpan.metacpan.org/authors/id/S/SB/SBECK/Locale-Codes-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SB/SBECK/Locale-Codes-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +27,7 @@ each deal with different types of codes which identify parts of the locale
 including languages, countries, currency, etc.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor

@@ -1,14 +1,15 @@
 %define upstream_name    Locale-Codes
+%define upstream_version 3.90
 Name:		perl-%{upstream_name}
 Version:	3.90
-Release:	2
+Release:	1
 
 Summary:	Standard language codes (such as ISO 639)
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/SBECK-github/Locale-Codes
-Source0:	https://cpan.metacpan.org/authors/id/S/SB/SBECK/Locale-Codes-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SB/SBECK/Locale-Codes-3.90.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

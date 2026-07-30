@@ -2,7 +2,7 @@
 %define upstream_version 3.90
 Name:		perl-%{upstream_name}
 Version:	3.90
-Release:	3
+Release:	4
 
 Summary:	Standard language codes (such as ISO 639)
 

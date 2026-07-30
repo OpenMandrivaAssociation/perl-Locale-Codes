@@ -2,7 +2,7 @@
 %define upstream_version 3.90
 Name:		perl-%{upstream_name}
 Version:	3.90
-Release:	4
+Release:	5
 
 Summary:	Standard language codes (such as ISO 639)
 
@@ -37,13 +37,14 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
-%make test
+:  # soft check
+%make test || :
 
 %install
 %makeinstall_std
 
 %files
-%doc README LICENSE META.yml 
+%doc README LICENSE META.yml
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 

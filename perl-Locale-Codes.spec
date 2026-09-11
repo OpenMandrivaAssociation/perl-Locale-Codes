@@ -28,7 +28,7 @@ each deal with different types of codes which identify parts of the locale
 including languages, countries, currency, etc.
 
 %prep
-%setup -q -n Locale-Codes-3.90
+%setup -q -n Locale-Codes-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
